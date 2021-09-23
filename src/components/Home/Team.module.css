@@ -11,6 +11,8 @@
 
 .profile {
   width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .profileImage {
@@ -29,9 +31,24 @@
 }
 
 .description {
-  width: 70%;
+  width: 100%;
+  text-align: left;
 }
 
 .description > button {
   font-size: 12px;
+}
+
+.excerpt {
+  margin: 20px auto;
+  text-align: left;
+}
+
+@media only screen and (max-width: 600px) {
+  .profiles {
+    flex-direction: column;
+  }
+  .profile {
+    width: 100%;
+  }
 }

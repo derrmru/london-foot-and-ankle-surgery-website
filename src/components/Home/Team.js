@@ -1,7 +1,7 @@
 import * as React from 'react'
 import * as style from './Team.module.css'
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 const Team = () => {
     const data = useStaticQuery(graphql`
@@ -12,6 +12,7 @@ const Team = () => {
                 nodes {
                   title
                   slug
+                  content
                   featuredImage {
                     node {
                       localFile {
@@ -38,7 +39,7 @@ const Team = () => {
             <h2 dangerouslySetInnerHTML={{ __html: title }} />
             <div className={style.profiles}>
                 {
-                    data.allWpTeam.nodes.reverse().map((profile, i) => {
+                    data.allWpTeam.nodes.map((profile, i) => {
                         return <Link
                             key={'profile' + i}
                             className={style.profile}
@@ -52,7 +53,8 @@ const Team = () => {
                                 />
                             </div>
                             <div className={style.description}>
-                                <p>{profile.title}</p>
+                                <h3>{profile.title}</h3>
+                                <p className={style.excerpt}>{profile.content.split('<p>').join('').substring(0, 200)}...</p>
                                 <button>READ MORE</button>
                             </div>
                         </Link>
