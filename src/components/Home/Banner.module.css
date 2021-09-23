@@ -1,0 +1,94 @@
+.bannerContainer {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.headline {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  z-index: 80;
+  width: 440px;
+  text-align: left;
+}
+
+.headline > h1 {
+  font-size: 50px;
+}
+
+.headline > p {
+  font-size: 20px;
+}
+
+.bannerButtons {
+  margin: 20px auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.bannerButtons > a > button {
+  font-size: 14px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 1025px) {
+  .headline {
+    width: 350px;
+  }
+  .headline > h1 {
+    font-size: 40px;
+  }
+  .headline > p {
+    font-size: 16px;
+  }
+  .bannerButtons > a > button {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .bannerContainer {
+    width: auto;
+    height: 280px;
+  }
+  .headline {
+    width: 220px;
+    bottom: 10%;
+  }
+  .headline > h1 {
+    font-size: 24px;
+  }
+  .headline > p {
+    font-size: 12px;
+  }
+  .bannerButtons > a > button {
+    font-size: 8px;
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .bannerContainer {
+    width: auto;
+    height: 280px;
+  }
+  .headline {
+    width: 180px;
+    bottom: 5%;
+  }
+  .headline > h1 {
+    font-size: 14px;
+  }
+  .headline > p {
+    font-size: 10px;
+  }
+  .bannerButtons {
+    margin: 5px auto;
+  }
+  .bannerButtons > a > button {
+    font-size: 8px;
+    padding: 3px;
+    border-radius: 0;
+  }
+}

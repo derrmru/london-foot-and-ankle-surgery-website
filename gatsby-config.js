@@ -7,16 +7,11 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: "",
+        url: "http://beta.londonfootandanklesurgery.co.uk/graphql",
+        useACF: true,
       },
     },
     "gatsby-plugin-image",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "",
-      },
-    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",

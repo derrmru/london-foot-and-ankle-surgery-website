@@ -1,0 +1,133 @@
+.header {
+  width: 100%;
+  height: 140px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 0px 8px 0px #b7b7b7;
+  background-color: white;
+}
+
+.logoContain {
+  width: 80px;
+}
+
+.navigation {
+  width: 80%;
+  height: 92px;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.actions {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  font-size: 11px;
+  display: flex;
+}
+
+.info > p {
+  margin-left: 10px;
+}
+
+.mainBlue {
+  color: var(--main-color);
+}
+
+.secondBlue {
+  color: var(--second-color);
+}
+
+.menuWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.menuItem {
+  list-style-type: none;
+  cursor: pointer;
+  transition: 0.4s;
+  font-size: 15px;
+}
+
+@media (hover: hover) {
+  .menuItem:hover {
+    color: var(--second-color);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .clock {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .menuItem {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .header {
+    padding: 20px;
+  }
+  .whatsapp {
+    display: none;
+  }
+  .menuItem {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header {
+    height: 100px;
+  }
+  .logoContain {
+    width: 60px;
+  }
+  .mobile {
+    display: none;
+  }
+  .address {
+    display: none;
+  }
+  .bookButton {
+    font-size: 11px;
+    padding: 10px;
+  }
+  .menuWrapper {
+    display: none;
+  }
+  .navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .actions {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}

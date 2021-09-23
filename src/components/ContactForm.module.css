@@ -1,0 +1,128 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--second-color);
+}
+
+.form {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.action {
+  font-size: 40px;
+  color: white;
+  width: 20%;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: white;
+}
+
+.inputs {
+  width: 70%;
+  text-align: left;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.inputs > label {
+  margin: 5px;
+  color: white;
+  width: 45%;
+  text-align: left;
+  font-size: 16px;
+}
+
+.inputs > label > input {
+  width: 100%;
+  color: white;
+  font-family: inherit;
+  border: 2px solid white;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 5px;
+  background-color: var(--second-color);
+}
+
+.inputs > label > textarea {
+  width: 100%;
+  height: 40px;
+  color: white;
+  font-family: inherit;
+  border: 2px solid white;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 7px 5px 5px;
+  background-color: var(--second-color);
+}
+
+.form > input[type="submit"] {
+  width: 25%;
+  color: var(--main-color);
+  font-family: inherit;
+  font-size: 18px;
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  .form > input[type="submit"]:hover {
+    background-color: var(--second-color);
+    border-color: var(--main-color);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .action {
+    width: 100%;
+    font-size: 20px;
+  }
+  .form {
+    width: 100%;
+  }
+  .inputs {
+    width: 100%;
+  }
+  .inputs > label {
+    width: 100%;
+    font-size: 10px;
+  }
+  .form > input[type="submit"] {
+    width: 100%;
+    font-size: 12px;
+  }
+}
