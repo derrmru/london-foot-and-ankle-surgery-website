@@ -54,7 +54,7 @@ const Team = () => {
                             </div>
                             <div className={style.description}>
                                 <h3>{profile.title}</h3>
-                                <p className={style.excerpt}>{profile.content.split('<p>').join('').substring(0, 200)}...</p>
+                                <p className={style.excerpt}>{profile.content.split('<p>').join('').split('&amp;').join('&').substring(0, 200)}...</p>
                                 <button>READ MORE</button>
                             </div>
                         </Link>

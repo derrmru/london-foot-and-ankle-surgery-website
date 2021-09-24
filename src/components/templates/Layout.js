@@ -1,5 +1,6 @@
 import * as React from 'react'
 import Navbar from '../Navbar'
+import Footer from '../Footer'
 import * as style from './Layout.module.css'
 
 const Layout = ({ children }) => {
@@ -9,7 +10,7 @@ const Layout = ({ children }) => {
 
             <div className={style.body}>{children}</div>
 
-            <footer></footer>
+            <Footer />
         </div>
     )
 }
