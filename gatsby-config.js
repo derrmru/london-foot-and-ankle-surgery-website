@@ -7,8 +7,7 @@ module.exports = {
     {
       resolve: "gatsby-source-wordpress",
       options: {
-        url: "http://beta.londonfootandanklesurgery.co.uk/graphql",
-        useACF: true,
+        url: "http://beta.londonfootandanklesurgery.co.uk/graphql"
       },
     },
     "gatsby-plugin-image",

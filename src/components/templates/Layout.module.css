@@ -15,6 +15,7 @@
       format("truetype"),
     /* Safari, Android, iOS */
       url("../../fonts/Barlow/barlow-v5-latin-regular.svg#Barlow") format("svg"); /* Legacy iOS */
+  font-display: swap;
 }
 
 @font-face {
@@ -24,6 +25,7 @@
   src: 
     /* Modern Browsers */ url("../../fonts/Playfair/PlayfairDisplay-Regular.ttf")
     format("truetype");
+  font-display: swap;
 }
 
 :root {

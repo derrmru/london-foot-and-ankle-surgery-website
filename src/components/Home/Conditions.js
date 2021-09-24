@@ -46,7 +46,6 @@ const Conditions = () => {
     }
     `)
 
-  console.log(data)
   const image = getImage(data.wpPage.homepageFields.treatmentsBackgroundImage.localFile.childImageSharp.gatsbyImageData);
   const heading = data.wpPage.homepageFields.sectionHeading1;
 

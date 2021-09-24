@@ -21,14 +21,16 @@ const Footer = () => {
                 <div className={style.col}>
                     <h3>Call Us</h3>
                     <div className={style.teleLine}>
-                        <StaticImage
-                            src="../images/telephone.svg"
-                            alt="Telephone calling icon"
-                            placeholder="blurred"
-                            layout="fixed"
-                            width={30}
-                            height={30}
-                        />
+                        <a href="tel:+442078208007">
+                            <StaticImage
+                                src="../images/telephone.svg"
+                                alt="Telephone calling icon"
+                                placeholder="blurred"
+                                layout="fixed"
+                                width={30}
+                                height={30}
+                            />
+                        </a>
                         <div>+44 207 820 8007</div>
                     </div>
 
