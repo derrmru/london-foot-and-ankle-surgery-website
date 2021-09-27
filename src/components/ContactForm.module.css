@@ -93,12 +93,22 @@
   background-color: white;
   cursor: pointer;
   transition: 0.4s;
+  -webkit-appearance: none;
 }
 
 @media (hover: hover) {
   .form > input[type="submit"]:hover {
     background-color: var(--second-color);
     border-color: var(--main-color);
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .action {
+    font-size: 30px;
+  }
+  .form > input[type="submit"] {
+    font-size: 14px;
   }
 }
 
